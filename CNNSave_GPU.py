@@ -6,15 +6,18 @@ import torch.nn as nn
 import torch.utils.data as Data
 import torchvision
 import argparse
+import os
 
 #设置超参数
 parser = argparse.ArgumentParser(description='super params')
-parser.add_argument('--EPOCH', type=int, default=1, metavar='N',
+parser.add_argument('--EPOCH', type=int, default=3, metavar='N',
                     help='number of epochs to train (default: 1)')
 parser.add_argument('--BATCH_SIZE', type=int, default=64, metavar='N',
                     help='input batch size for training (default: 64)')
 parser.add_argument('--LR', type=float, default=0.001, metavar='LR',
                     help='learning rate (default: 0.001)')
+parser.add_argument('--MODELFOLDER',type= str, default='./model/',
+                help="folder to store model")
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1','True'):
@@ -24,9 +27,9 @@ def str2bool(v):
     else: raise argparse.ArgumentTypeError('Unsupported value encountered.')
 
 
-parser.add_argument('--DOWNLOAD_MNIST', type=str2bool, nargs='?', const=True,
+parser.add_argument('-d','--DOWNLOAD_MNIST', type=str2bool, nargs='?', const=True, required=True,
                     help='DOWNLOAD_MNIST (default: True)')
-parser.add_argument('--TrainOrNot', type=str2bool, nargs='?', const=True,
+parser.add_argument('-t','--TrainOrNot', type=str2bool, nargs='?', const=True, required= True,
                     help='TrainOrNot (default: True)')
 
 args = parser.parse_args()
@@ -76,12 +79,23 @@ class CNN(nn.Module):
 
 #训练以及保存模型数据
 def ModelTrainSave():
-    if use_gpu:
-        cnn = CNN()
-        cnn = torch.nn.DataParallel(cnn, device_ids=range(torch.cuda.device_count()))
-        cnn = CNN().cuda()
+    if os.path.isfile(
+            args.MODELFOLDER + 'net_params_best.pkl'):
+        print('reload the last best model parameters')
+        if use_gpu:
+            cnn = CNN()
+            cnn = torch.nn.DataParallel(cnn, device_ids=range(torch.cuda.device_count()))
+            cnn = cnn().cuda()
+        else:
+            cnn = CNN()
+        cnn.load_state_dict(torch.load(args.MODELFOLDER + 'net_params_best.pkl'))
     else:
-        cnn =CNN()
+        if use_gpu:
+            cnn = CNN()
+            cnn = torch.nn.DataParallel(cnn, device_ids=range(torch.cuda.device_count()))
+            cnn = CNN().cuda()
+        else:
+            cnn =CNN()
     optimizer = torch.optim.Adam(cnn.parameters(), lr=args.LR)
     loss_func = nn.CrossEntropyLoss()
 
@@ -109,21 +123,101 @@ def ModelTrainSave():
                 print(pred_y)
                 accuracy = torch.sum(pred_y == test_y).type(torch.FloatTensor)/test_y.size(0)
                 print('Epoch',epoch,'| train loss: %.4f' % loss.data.cpu().numpy(), '| test accuracy: %.2f' % accuracy)
+        #检查是否有模型文件夹，没有就自行创建一个
+        if not os.path.isdir(args.MODELFOLDER):
+            os.mkdir(args.MODELFOLDER)
+        #保存一个周期训练好的模型以及参数，并且周期数要记录
+        torch.save(cnn,args.MODELFOLDER+'cnn_entire'+str(args.EPOCH+1)+'.pkl')
+        torch.save(cnn.state_dict(),args.MODELFOLDER+'net_params'+str(args.EPOCH+1)+'.pkl')
+        #保存最新训练好的模型和参数，为日后加载使用
+        torch.save(cnn, args.MODELFOLDER + 'cnn_entire_new.pkl')
+        torch.save(cnn.state_dict(), args.MODELFOLDER + 'net_params_new.pkl')
+        #比较最新训练好的参数和上一次训练最好的参数，然后保存最优的
+        if epoch ==0:
+            torch.save(cnn, args.MODELFOLDER + 'cnn_entire_best.pkl')
+            torch.save(cnn.state_dict(), args.MODELFOLDER + 'net_params_best.pkl')
 
-    torch.save(cnn,'cnn_entire.pkl')
-    torch.save(cnn.state_dict(),'net_params.pkl')
+        if os.path.isfile(args.MODELFOLDER + 'cnn_entire_new.pkl') and os.path.isfile(args.MODELFOLDER + 'cnn_entire_best.pkl'):
+            if use_gpu:
+                cnnNew= torch.load(args.MODELFOLDER + 'cnn_entire_new.pkl')
+                cnnNew = torch.nn.DataParallel(cnnNew, device_ids=range(torch.cuda.device_count()))
+                cnnNew = cnnNew().cuda()
+            else:
+                cnnNew = torch.load(args.MODELFOLDER + 'cnn_entire_new.pkl')
+            if use_gpu:
+                cnnorg= torch.load(args.MODELFOLDER + 'cnn_entire_best.pkl')
+                cnnorg = torch.nn.DataParallel(cnnorg, device_ids=range(torch.cuda.device_count()))
+                cnnorg = cnnorg().cuda()
+            else:
+                cnnorg = torch.load(args.MODELFOLDER + 'cnn_entire_best.pkl')
+
+            test_output_New = cnnNew(test_x)
+            test_output_org = cnnorg(test_x)
+            if use_gpu:
+             #   pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+                predNew_y = torch.max(test_output_New, 1)[1].cuda().data
+                predorg_y = torch.max(test_output_org, 1)[1].cuda().data
+            else:
+                predNew_y = torch.max(test_output_New, 1)[1].data
+                predorg_y = torch.max(test_output_org, 1)[1].data
+            accuracyNew = torch.sum(predNew_y == test_y).type(torch.FloatTensor) / test_y.size(0)
+            accuracyorg = torch.sum(predorg_y == test_y).type(torch.FloatTensor) / test_y.size(0)
+            print('Epoch',epoch, '| new accuracy: %.5f' % accuracyNew, '| org accuracy: %.5f' % accuracyorg)
+            if accuracyNew > accuracyorg:
+                #这样写有问题，就是会把new的训练参数删掉，需要进一步修改
+                os.renames(args.MODELFOLDER + 'cnn_entire_new.pkl',args.MODELFOLDER + 'cnn_entire_best.pkl')
+                print('best model save update in epoch', epoch)
+            else:
+                print('best model is still the original')
+
+        if os.path.isfile(args.MODELFOLDER + 'net_params_new.pkl') and os.path.isfile(
+            args.MODELFOLDER + 'net_params_best.pkl'):
+            if use_gpu:
+                cnnpnew = CNN()
+                cnnpnew = torch.nn.DataParallel(cnnpnew, device_ids=range(torch.cuda.device_count()))
+                cnnpnew = cnnpnew().cuda()
+            else:
+                cnnpnew  = CNN()
+            cnnpnew.load_state_dict(torch.load(args.MODELFOLDER + 'net_params_new.pkl'))
+            if use_gpu:
+                cnnpo = CNN()
+                cnnpo= torch.nn.DataParallel(cnnpo, device_ids=range(torch.cuda.device_count()))
+                cnnpo = cnnpo().cuda()
+            else:
+                cnnpo = CNN()
+            cnnpo.load_state_dict(torch.load(args.MODELFOLDER + 'net_params_best.pkl'))
+
+            test_output_pNew = cnnpnew(test_x)
+            test_output_porg = cnnpo(test_x)
+            if use_gpu:
+                #   pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+                predpNew_y = torch.max(test_output_pNew, 1)[1].cuda().data
+                predporg_y = torch.max(test_output_porg, 1)[1].cuda().data
+            else:
+                predpNew_y = torch.max(test_output_pNew, 1)[1].data
+                predporg_y = torch.max(test_output_porg, 1)[1].data
+            accuracypNew = torch.sum(predpNew_y == test_y).type(torch.FloatTensor) / test_y.size(0)
+            accuracyporg = torch.sum(predporg_y == test_y).type(torch.FloatTensor) / test_y.size(0)
+            print('Epoch', epoch, '| new accuracy: %.5f' % accuracyNew, '| org accuracy: %.5f' % accuracyorg)
+            if accuracypNew > accuracyporg:
+                # 这样写有问题，就是会把new的训练参数删掉，需要进一步修改
+                os.renames(args.MODELFOLDER + 'net_params_new.pkl', args.MODELFOLDER + 'net_params_best.pkl')
+                print('best model save update in epoch', epoch)
+            else:
+                print('best model is still the original')
+
 
 #加载模型和训练好的参数
 def CNNModerRestore():
     if use_gpu:
-        cnnrestore = torch.load('cnn_entire.pkl')
+        cnnrestore = torch.load(args.MODELFOLDER+'cnn_entire_best.pkl')
         cnnrestore = torch.nn.DataParallel(cnnrestore, device_ids=range(torch.cuda.device_count()))
-        cnnrestore = torch.load('cnn_entire.pkl').cuda()
+        cnnrestore = cnnrestore().cuda()
     else:
-        cnnrestore = torch.load('cnn_entire.pkl')
+        cnnrestore = torch.load(args.MODELFOLDER+'cnn_entire_best.pkl')
     test_output = cnnrestore(test_x)
     if use_gpu:
-        pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+     #   pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
         pred_y = torch.max(test_output, 1)[1].cuda().data
     else:
         pred_y = torch.max(test_output, 1)[1].data
@@ -136,13 +230,13 @@ def CNNParams():
     if use_gpu:
         cnnparams = CNN()
         cnnparams = torch.nn.DataParallel(cnnparams, device_ids=range(torch.cuda.device_count()))
-        cnnparams = CNN().cuda()
+        cnnparams = cnnparams().cuda()
     else:
         cnnparams = CNN()
-    cnnparams.load_state_dict(torch.load('net_params.pkl'))
+    cnnparams.load_state_dict(torch.load(args.MODELFOLDER+'net_params_best.pkl'))
     test_output = cnnparams(test_x)
     if use_gpu:
-        pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+      #  pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
         pred_y = torch.max(test_output, 1)[1].cuda().data
     else:
         pred_y = torch.max(test_output, 1)[1].data
