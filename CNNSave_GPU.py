@@ -31,15 +31,25 @@ parser.add_argument('--TrainOrNot', type=str2bool, nargs='?', const=True,
 
 args = parser.parse_args()
 
+#检测是否有利用的gpu环境
+use_gpu = torch.cuda.is_available()
+print('use GPU:',use_gpu)
+
 #数据预处理
 train_data = torchvision.datasets.MNIST(root='./mnist/',train=True,transform=torchvision.transforms.ToTensor(),download=args.DOWNLOAD_MNIST) #将数据转成tensor结构
 train_loader = Data.DataLoader(dataset=train_data, batch_size=args.BATCH_SIZE, shuffle=True) #DataLoader是进行批处理的好工具
 
 test_data = torchvision.datasets.MNIST(root='./mnist', train=False)
 
-#测试数据放入cuda中
-test_x = torch.unsqueeze(test_data.test_data, dim=1).type(torch.FloatTensor)[:2000].cuda()/255.
-test_y = test_data.test_labels[:2000].cuda()
+#测试数据中
+if use_gpu:
+    test_x = torch.nn.DataParallel(test_x,device_ids=range(torch.cuda.device_count()))
+    test_y = torch.nn.DataParallel(test_y, device_ids=range(torch.cuda.device_count()))
+    test_x = torch.unsqueeze(test_data.test_data, dim=1).type(torch.FloatTensor)[:2000].cuda()/255.
+    test_y = test_data.test_labels[:2000].cuda()
+else:
+    test_x = torch.unsqueeze(test_data.test_data, dim=1).type(torch.FloatTensor)[:2000]/255.
+    test_y = test_data.test_labels[:2000]
 
 #神经网络建模
 class CNN(nn.Module):
@@ -66,15 +76,23 @@ class CNN(nn.Module):
 
 #训练以及保存模型数据
 def ModelTrainSave():
-    cnn = CNN().cuda()
+    if use_gpu:
+        cnn = CNN()
+        cnn = torch.nn.DataParallel(cnn, device_ids=range(torch.cuda.device_count()))
+        cnn = CNN().cuda()
+    else:
+        cnn =CNN()
     optimizer = torch.optim.Adam(cnn.parameters(), lr=args.LR)
     loss_func = nn.CrossEntropyLoss()
 
     for epoch in range(args.EPOCH):
         for step, (x,y) in enumerate(train_loader):
-            b_x = x.cuda()
-            b_y = y.cuda()
-
+            if use_gpu:
+                b_x = x.cuda()
+                b_y = y.cuda()
+            else:
+                b_x = x
+                b_y = y
             output = cnn(b_x)
             loss = loss_func(output, b_y)
             optimizer.zero_grad() #将上一步梯度值清零
@@ -83,7 +101,11 @@ def ModelTrainSave():
 
             if step % 50 == 0:
                 test_output = cnn(test_x)
-                pred_y = torch.max(test_output, 1)[1].cuda().data
+                if use_gpu:
+                    pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+                    pred_y = torch.max(test_output, 1)[1].cuda().data
+                else:
+                    pred_y = torch.max(test_output, 1)[1].data
                 print(pred_y)
                 accuracy = torch.sum(pred_y == test_y).type(torch.FloatTensor)/test_y.size(0)
                 print('Epoch',epoch,'| train loss: %.4f' % loss.data.cpu().numpy(), '| test accuracy: %.2f' % accuracy)
@@ -93,19 +115,37 @@ def ModelTrainSave():
 
 #加载模型和训练好的参数
 def CNNModerRestore():
-    cnnrestore = torch.load('cnn_entire.pkl').cuda()
+    if use_gpu:
+        cnnrestore = torch.load('cnn_entire.pkl')
+        cnnrestore = torch.nn.DataParallel(cnnrestore, device_ids=range(torch.cuda.device_count()))
+        cnnrestore = torch.load('cnn_entire.pkl').cuda()
+    else:
+        cnnrestore = torch.load('cnn_entire.pkl')
     test_output = cnnrestore(test_x)
-    pred_y = torch.max(test_output, 1)[1].cuda().data
+    if use_gpu:
+        pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+        pred_y = torch.max(test_output, 1)[1].cuda().data
+    else:
+        pred_y = torch.max(test_output, 1)[1].data
     print(pred_y)
     accuracy = torch.sum(pred_y == test_y).type(torch.FloatTensor) / test_y.size(0)
     print( 'test accuracy: %.2f' % accuracy)
 
 #只加载训练好的参数
 def CNNParams():
-    cnnparams = CNN().cuda()
+    if use_gpu:
+        cnnparams = CNN()
+        cnnparams = torch.nn.DataParallel(cnnparams, device_ids=range(torch.cuda.device_count()))
+        cnnparams = CNN().cuda()
+    else:
+        cnnparams = CNN()
     cnnparams.load_state_dict(torch.load('net_params.pkl'))
     test_output = cnnparams(test_x)
-    pred_y = torch.max(test_output, 1)[1].cuda().data
+    if use_gpu:
+        pred_y = torch.nn.DataParallel(pred_y, device_ids=range(torch.cuda.device_count()))
+        pred_y = torch.max(test_output, 1)[1].cuda().data
+    else:
+        pred_y = torch.max(test_output, 1)[1].data
     print(pred_y)
     accuracy = torch.sum(pred_y == test_y).type(torch.FloatTensor) / test_y.size(0)
     print( 'test accuracy: %.2f' % accuracy)
