@@ -7,6 +7,7 @@ import torch.utils.data as Data
 import torchvision
 import argparse
 import os
+from tensorboardX import SummaryWriter
 
 #设置超参数
 parser = argparse.ArgumentParser(description='super params')
@@ -112,6 +113,11 @@ def ModelTrainSave():
             optimizer.zero_grad() #将上一步梯度值清零
             loss.backward() #求此刻各参数的梯度值
             optimizer.step() #更新参数
+
+            # 可视化模型结构
+            with SummaryWriter(log_dir='cnn01') as w:
+                w.add_graph(cnn,(b_x,))
+                w.add_scalar('Train', loss, global_step=(epoch+1)*10000+step )
 
             if step % 50 == 0:
                 test_output = cnn(test_x)
