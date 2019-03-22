@@ -3,13 +3,262 @@
   <component name="ChangeListManager">
     <list default="true" id="9e33d08f-5f79-4b05-a53f-21d646b7374d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNNSave_GPU.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNSave_GPU.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNSave_GPU.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155901.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155902.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155903.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155904.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155905.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155906.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155907.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155908.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155909.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155910.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155911.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155912.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155913.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155914.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155915.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155916.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155917.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155918.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155919.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155920.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155921.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155922.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155923.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155924.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155925.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155926.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155927.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155928.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155929.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155930.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155931.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155932.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155933.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155934.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155935.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155936.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155937.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155938.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155939.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155940.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155941.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155942.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155943.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155944.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155945.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155946.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155947.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155948.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155949.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155950.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155951.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155952.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155953.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155954.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155955.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155956.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155957.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155958.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155959.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155960.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155961.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155962.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155963.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155964.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155965.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155966.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155967.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155968.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155969.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155970.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155971.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155972.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155973.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155974.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155975.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155976.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155977.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155978.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155979.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155980.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155981.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155982.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155983.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155984.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155985.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155986.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155987.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155988.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155989.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155990.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155991.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155992.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155993.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155994.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155995.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155996.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155997.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155998.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553155999.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156000.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156001.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156002.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156003.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156004.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156005.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156006.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156007.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156008.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156009.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156010.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156011.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156012.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156013.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156014.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156015.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156016.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156017.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156018.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156019.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156020.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156021.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156022.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156023.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156024.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156025.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156026.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156027.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156028.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156029.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156030.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156031.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156032.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156033.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156034.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156035.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156036.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156037.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156038.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156039.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156040.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156041.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156042.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156043.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156044.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156045.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156046.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156047.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156048.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156049.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156050.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156051.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156052.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156053.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156054.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156055.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156056.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156057.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156058.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156059.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156060.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156061.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156062.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156063.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156064.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156065.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156066.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156067.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156068.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156069.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156070.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156071.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156072.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156073.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156074.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156075.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156076.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156077.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156078.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156079.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156080.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156081.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156082.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156083.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156084.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156085.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156086.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156087.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156088.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156089.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156090.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156091.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156092.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156093.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156094.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156095.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156096.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156097.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156098.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156099.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156100.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156101.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156102.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156103.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156104.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156105.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156106.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156107.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156108.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156109.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156110.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156111.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156112.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156113.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156114.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156115.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156116.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156117.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156118.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156119.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156120.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156121.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156122.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156123.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156124.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156125.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156126.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156127.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156128.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156129.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156130.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156131.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156132.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156133.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156134.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156135.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156136.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156137.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156138.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156139.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156140.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156141.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156142.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156143.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156144.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156145.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156146.aaron-ThinkPad-E470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn01/events.out.tfevents.1553156147.aaron-ThinkPad-E470" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mnist/MNIST/processed/test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/mnist/MNIST/processed/test.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mnist/MNIST/processed/training.pt" beforeDir="false" afterPath="$PROJECT_DIR$/mnist/MNIST/processed/training.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/cnn_entire4.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/cnn_entire4.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/cnn_entire_best.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/cnn_entire_best.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/net_params4.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/net_params4.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/net_params_best.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/net_params_best.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cnn_entire4.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cnn_entire_best.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cnn_entire_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/net_params4.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/net_params_best.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/net_params_new.pkl" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,15 +269,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CNNSave_GPU.py">
+        <entry file="file://$PROJECT_DIR$/CNNSave_GPU_new_01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2332">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="468">
+              <caret line="245" column="12" selection-start-line="245" selection-start-column="12" selection-end-line="245" selection-end-column="12" />
+              <folding>
+                <element signature="e#30#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pkl</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>pth</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,10 +297,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CNNSave_GPU.py" />
+        <option value="$PROJECT_DIR$/CNNSave_GPU_new_01.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="-4" />
     <option name="width" value="1301" />
@@ -80,7 +341,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.CNNSave_GPU_new_01">
     <configuration name="CNNSave_GPU" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="git-learning-code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,8 +363,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="CNNSave_GPU_new_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="git-learning-code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNNSave_GPU_new_01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CNNSave_GPU_new_01" />
         <item itemvalue="Python.CNNSave_GPU" />
       </list>
     </recent_temporary>
@@ -122,9 +405,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.02349256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.039937355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -151,10 +434,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CNNSave_GPU.py">
+    <entry file="file://$PROJECT_DIR$/CNNSave_GPU.py" />
+    <entry file="file://$PROJECT_DIR$/CNNSave_GPU_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2332">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="-1">
+          <folding>
+            <element signature="e#30#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNNSave_GPU_new_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="245" column="12" selection-start-line="245" selection-start-column="12" selection-end-line="245" selection-end-column="12" />
+          <folding>
+            <element signature="e#30#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
